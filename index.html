@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronPulse Fitness - Premium Gym</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>IronPulse Fitness - Premium Gym & Fitness Center</title>
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <i class="fas fa-dumbbell"></i>
+            <a href="index.html" class="logo">
+                <i class="fas fa-bolt"></i>
                 <span>IronPulse</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#trainers">Trainers</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,410 +35,202 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Transform Your Body<br><span>Ignite Your Spirit</span></h1>
-            <p class="hero-text">Premium fitness equipment, expert trainers, and a motivating environment to help you achieve your fitness goals.</p>
+            <span class="hero-badge">#1 Fitness Center in the City</span>
+            <h1 class="hero-title">Unleash Your<br><span>Inner Power</span></h1>
+            <p class="hero-text">State-of-the-art equipment, world-class trainers, and an electrifying atmosphere to transform your body and mind.</p>
             <div class="hero-buttons">
-                <a href="#membership" class="btn btn-primary">Join Now</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+                <a href="membership.html" class="btn btn-primary">Start Your Journey</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-subtitle">Your fitness journey starts here</p>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-frame">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
+            <div class="hero-stats stats-container">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="15000">0</span>
+                    <span class="hero-stat-label">Square Feet</span>
                 </div>
-                <div class="about-text">
-                    <h3>Why Choose IronPulse?</h3>
-                    <p>Founded in 2015, IronPulse Fitness has been transforming lives through fitness. Our state-of-the-art facility spans 20,000 square feet of premium workout space.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check"></i> 24/7 Access</li>
-                        <li><i class="fas fa-check"></i> Expert Personal Trainers</li>
-                        <li><i class="fas fa-check"></i> Group Fitness Classes</li>
-                        <li><i class="fas fa-check"></i> Nutrition Counseling</li>
-                    </ul>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="5000">0</span>
-                            <span class="stat-label">Members</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="50">0</span>
-                            <span class="stat-label">Trainers</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="100">0</span>
-                            <span class="stat-label">Classes/Week</span>
-                        </div>
-                    </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="5000">0</span>
+                    <span class="hero-stat-label">Happy Members</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="50">0</span>
+                    <span class="hero-stat-label">Expert Trainers</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="100">0</span>
+                    <span class="hero-stat-label">Weekly Classes</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Facilities Section -->
-    <section id="facilities" class="facilities">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Facilities</h2>
-                <p class="section-subtitle">World-class equipment & amenities</p>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Experience fitness at its finest</p>
             </div>
-            <div class="facilities-grid">
-                <div class="facility-card">
-                    <div class="facility-icon">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
-                    <h3>Strength Zone</h3>
-                    <p>200+ pieces of premium strength equipment including free weights, machines, and functional training areas.</p>
+                    <h3>Modern Equipment</h3>
+                    <p>Top-tier machines and free weights for every fitness level and goal.</p>
                 </div>
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-running"></i>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
                     </div>
-                    <h3>Cardio Theater</h3>
-                    <p>50+ cardio machines with personal entertainment screens and heart rate monitoring.</p>
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals dedicated to your success and safety.</p>
                 </div>
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-users"></i>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Group Studios</h3>
-                    <p>3 dedicated studios for yoga, spin, HIIT, and dance classes with premium sound systems.</p>
+                    <h3>24/7 Access</h3>
+                    <p>Train on your schedule with round-the-clock facility access.</p>
                 </div>
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-swimming-pool"></i>
-                    </div>
-                    <h3>Indoor Pool</h3>
-                    <p>Olympic-sized heated pool for lap swimming, aqua aerobics, and relaxation.</p>
-                </div>
-                <div class="facility-card">
-                    <div class="facility-icon">
+                <div class="feature-box">
+                    <div class="feature-icon">
                         <i class="fas fa-spa"></i>
                     </div>
-                    <h3>Recovery Spa</h3>
-                    <p>Sauna, steam room, hot tub, and massage therapy for complete post-workout recovery.</p>
-                </div>
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-locker"></i>
-                    </div>
-                    <h3>Premium Lockers</h3>
-                    <p>Secure digital lockers with towel service and private changing rooms.</p>
+                    <h3>Recovery Zone</h3>
+                    <p>Sauna, steam room, and massage therapy for complete recovery.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- About Preview -->
+    <section class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive fitness solutions</p>
-            </div>
-            <div class="services-container">
-                <div class="service-tabs">
-                    <button class="tab-btn active" data-tab="personal">Personal Training</button>
-                    <button class="tab-btn" data-tab="group">Group Classes</button>
-                    <button class="tab-btn" data-tab="nutrition">Nutrition</button>
-                    <button class="tab-btn" data-tab="online">Online Coaching</button>
-                </div>
-                <div class="tab-content">
-                    <div id="personal" class="tab-pane active">
-                        <div class="service-content">
-                            <div class="service-image">
-                                <i class="fas fa-user-ninja"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Personal Training</h3>
-                                <p>One-on-one training sessions tailored to your specific goals. Our certified trainers create customized workout plans and provide constant motivation and accountability.</p>
-                                <ul>
-                                    <li>Customized workout programs</li>
-                                    <li>Progress tracking & assessments</li>
-                                    <li>Nutrition guidance</li>
-                                    <li>Flexible scheduling</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">Book a Session</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="group" class="tab-pane">
-                        <div class="service-content">
-                            <div class="service-image">
-                                <i class="fas fa-users-cog"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Group Fitness Classes</h3>
-                                <p>High-energy group workouts led by inspiring instructors. From yoga to HIIT, find your perfect class and join our fitness community.</p>
-                                <ul>
-                                    <li>Yoga & Pilates</li>
-                                    <li>Spin & Cycle</li>
-                                    <li>HIIT & Bootcamp</li>
-                                    <li>Zumba & Dance</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">View Schedule</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="nutrition" class="tab-pane">
-                        <div class="service-content">
-                            <div class="service-image">
-                                <i class="fas fa-apple-alt"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Nutrition Counseling</h3>
-                                <p>Expert nutritionists create personalized meal plans to complement your fitness routine. Learn to fuel your body for optimal performance.</p>
-                                <ul>
-                                    <li>Personalized meal plans</li>
-                                    <li>Body composition analysis</li>
-                                    <li>Supplement guidance</li>
-                                    <li>Ongoing support & adjustments</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="online" class="tab-pane">
-                        <div class="service-content">
-                            <div class="service-image">
-                                <i class="fas fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Online Coaching</h3>
-                                <p>Train anywhere with our virtual coaching platform. Get workouts, nutrition plans, and check-ins from your personal trainer via our mobile app.</p>
-                                <ul>
-                                    <li>Custom workout videos</li>
-                                    <li>24/7 trainer messaging</li>
-                                    <li>Progress photo tracking</li>
-                                    <li>Live virtual sessions</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trainers Section -->
-    <section id="trainers" class="trainers">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Expert Trainers</h2>
-                <p class="section-subtitle">Meet our fitness professionals</p>
-            </div>
-            <div class="trainers-grid">
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Marcus Johnson</h3>
-                    <p class="trainer-role">Head Strength Coach</p>
-                    <p class="trainer-bio">10+ years experience. Specializes in powerlifting and athletic performance.</p>
-                    <div class="trainer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Sarah Chen</h3>
-                    <p class="trainer-role">Yoga & Pilates Instructor</p>
-                    <p class="trainer-bio">Certified yoga therapist. Expert in flexibility and mindfulness training.</p>
-                    <div class="trainer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>David Rodriguez</h3>
-                    <p class="trainer-role">HIIT Specialist</p>
-                    <p class="trainer-bio">Former athlete. Creates intense, results-driven cardio and strength programs.</p>
-                    <div class="trainer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Emma Williams</h3>
-                    <p class="trainer-role">Nutritionist</p>
-                    <p class="trainer-bio">Registered dietitian. Helps clients achieve goals through science-based nutrition.</p>
-                    <div class="trainer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Membership Section -->
-    <section id="membership" class="membership">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Membership Plans</h2>
-                <p class="section-subtitle">Choose your fitness journey</p>
-            </div>
-            <div class="pricing-toggle">
-                <span class="toggle-label">Monthly</span>
-                <label class="switch">
-                    <input type="checkbox" id="billingToggle">
-                    <span class="slider"></span>
-                </label>
-                <span class="toggle-label">Yearly <span class="save-badge">Save 20%</span></span>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3 class="plan-name">Basic</h3>
-                    <div class="plan-price">
-                        <span class="currency">$</span>
-                        <span class="amount" data-monthly="29" data-yearly="279">29</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Gym access (6am - 10pm)</li>
-                        <li><i class="fas fa-check"></i> Locker room access</li>
-                        <li><i class="fas fa-check"></i> Free parking</li>
-                        <li><i class="fas fa-check"></i> WiFi access</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Group classes</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Personal training</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Pool & spa access</li>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Transform Your Body,<br>Transform Your Life</h2>
+                    <p>Since 2015, IronPulse has been the premier destination for fitness enthusiasts. Our 15,000 sq ft facility combines cutting-edge technology with expert coaching to deliver unparalleled results.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Personalized training programs</li>
+                        <li><i class="fas fa-check"></i> State-of-the-art equipment</li>
+                        <li><i class="fas fa-check"></i> Nutrition & wellness coaching</li>
+                        <li><i class="fas fa-check"></i> Community & support</li>
                     </ul>
-                    <button class="btn btn-outline">Select Plan</button>
+                    <a href="about.html" class="btn btn-primary">Discover Our Story</a>
                 </div>
-                <div class="pricing-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3 class="plan-name">Premium</h3>
-                    <div class="plan-price">
-                        <span class="currency">$</span>
-                        <span class="amount" data-monthly="59" data-yearly="567">59</span>
-                        <span class="period">/month</span>
+                <div class="about-images">
+                    <div class="about-img-main"></div>
+                    <div class="about-img-float">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> 24/7 gym access</li>
-                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
-                        <li><i class="fas fa-check"></i> Pool & spa access</li>
-                        <li><i class="fas fa-check"></i> 2 PT sessions/month</li>
-                        <li><i class="fas fa-check"></i> Nutrition consultation</li>
-                        <li><i class="fas fa-check"></i> Guest passes (2/month)</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Online coaching</li>
-                    </ul>
-                    <button class="btn btn-primary">Select Plan</button>
-                </div>
-                <div class="pricing-card">
-                    <h3 class="plan-name">Elite</h3>
-                    <div class="plan-price">
-                        <span class="currency">$</span>
-                        <span class="amount" data-monthly="99" data-yearly="950">99</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> All Premium features</li>
-                        <li><i class="fas fa-check"></i> Unlimited PT sessions</li>
-                        <li><i class="fas fa-check"></i> Online coaching</li>
-                        <li><i class="fas fa-check"></i> Priority class booking</li>
-                        <li><i class="fas fa-check"></i> Recovery spa unlimited</li>
-                        <li><i class="fas fa-check"></i> Nutrition meal plans</li>
-                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
-                    </ul>
-                    <button class="btn btn-outline">Select Plan</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Classes Preview -->
+    <section class="features" style="background: var(--darker-color);">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Start your transformation today</p>
+                <h2 class="section-title">Popular Classes</h2>
+                <p class="section-subtitle">Find your perfect workout</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>123 Fitness Street, Gym City, GC 12345</p>
-                        </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>(555) 123-4567</p>
-                        </div>
+                    <h3>HIIT Training</h3>
+                    <p>High-intensity intervals for maximum calorie burn and endurance.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-om"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@ironpulse.com</p>
-                        </div>
+                    <h3>Yoga & Pilates</h3>
+                    <p>Improve flexibility, balance, and mental clarity with expert instructors.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-bicycle"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Hours</h4>
-                            <p>24/7 for Premium & Elite members</p>
-                        </div>
+                    <h3>Spin Classes</h3>
+                    <p>High-energy cycling sessions with pumping music and motivating coaches.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-fist-raised"></i>
                     </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    <h3>Boxing & MMA</h3>
+                    <p>Learn self-defense while building strength and confidence.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="classes.html" class="btn btn-secondary">View Full Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">What our members say</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">IronPulse completely transformed my approach to fitness. The trainers are incredibly knowledgeable and the community keeps me motivated every single day.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Lost 30 lbs in 6 months</p>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Best gym I've ever been to. The equipment is always clean and available, and the 24/7 access fits perfectly with my busy schedule.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>James Rodriguez</h4>
+                            <p>Member since 2020</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The personal training here is next level. My trainer helped me prepare for my first marathon and I couldn't have done it without them.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Chen</h4>
+                            <p>Marathon Runner</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <select id="interest" required>
-                            <option value="">I'm interested in...</option>
-                            <option value="membership">Membership</option>
-                            <option value="personal-training">Personal Training</option>
-                            <option value="group-classes">Group Classes</option>
-                            <option value="nutrition">Nutrition Counseling</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Transformation?</h2>
+                <p>Join IronPulse today and get your first week FREE. No commitment, no excuses.</p>
+                <div class="hero-buttons">
+                    <a href="membership.html" class="btn btn-primary">Claim Free Week</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
             </div>
         </div>
     </section>
@@ -444,35 +238,41 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <i class="fas fa-dumbbell"></i>
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt"></i>
                         <span>IronPulse</span>
                     </a>
-                    <p>Transform your body, ignite your spirit. Join the IronPulse community today.</p>
+                    <p>Transform your body, unleash your potential. Join the most electrifying fitness community in the city.</p>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Gym City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@ironpulse.com</li>
+                    </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#facilities">Facilities</a></li>
-                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div class="footer-services">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#services">Personal Training</a></li>
-                        <li><a href="#services">Group Classes</a></li>
-                        <li><a href="#services">Nutrition</a></li>
-                        <li><a href="#services">Online Coaching</a></li>
+                        <li><a href="classes.html">Group Classes</a></li>
+                        <li><a href="membership.html">Personal Training</a></li>
+                        <li><a href="membership.html">Nutrition Plans</a></li>
+                        <li><a href="membership.html">Online Coaching</a></li>
                     </ul>
                 </div>
                 <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for fitness tips and exclusive offers.</p>
+                    <h4>Stay Energized</h4>
+                    <p>Subscribe for fitness tips, exclusive offers, and event updates.</p>
                     <form class="newsletter-form" id="newsletterForm">
                         <input type="email" placeholder="Enter your email" required>
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -481,15 +281,3 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 IronPulse Fitness. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
-</body>
-</html>
