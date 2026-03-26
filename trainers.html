@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers - IronPulse Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>IronPulse</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="trainers.html" class="active">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="membership.html" class="btn btn-primary nav-cta">Join Now</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Meet Our Trainers</h1>
+            <p>50+ certified fitness professionals ready to help you succeed</p>
+        </div>
+    </section>
+
+    <!-- Trainer Filter -->
+    <section class="trainer-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Trainers</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="yoga">Yoga</button>
+                <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Grid -->
+    <section class="trainers-page">
+        <div class="container">
+            <div class="trainers-detailed-grid">
+                <div class="trainer-detailed-card" data-category="strength">
+                    <div class="trainer-photo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Marcus Johnson</h3>
+                        <p class="trainer-specialty">Strength & Conditioning</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">NSCA-CSCS</span>
+                            <span class="badge">10+ Years</span>
+                        </div>
+                        <p>Former collegiate athlete specializing in powerlifting and athletic performance. Marcus has helped 500+ clients achieve their strength goals.</p>
+                        <div class="trainer-stats">
+                            <div><strong>500+</strong> Clients</div>
+                            <div><strong>98%</strong> Success Rate</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+
+                <div class="trainer-detailed-card" data-category="yoga">
+                    <div class="trainer-photo bg-yoga">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Chen</h3>
+                        <p class="trainer-specialty">Yoga & Pilates</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">RYT-500</span>
+                            <span class="badge">8 Years</span>
+                        </div>
+                        <p>Certified yoga therapist with expertise in vinyasa, hatha, and restorative yoga. Sarah focuses on mindful movement and stress relief.</p>
+                        <div class="trainer-stats">
+                            <div><strong>300+</strong> Clients</div>
+                            <div><strong>5★</strong> Rating</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+
+                <div class="trainer-detailed-card" data-category="cardio">
+                    <div class="trainer-photo bg-cardio">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>David Rodriguez</h3>
+                        <p class="trainer-specialty">HIIT & Cardio</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">ACE-CPT</span>
+                            <span class="badge">7 Years</span>
+                        </div>
+                        <p>Former professional soccer player turned fitness coach. David's high-energy sessions are designed to maximize calorie burn and endurance.</p>
+                        <div class="trainer-stats">
+                            <div><strong>400+</strong> Clients</div>
+                            <div><strong>50K+</strong> Calories Burned</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+
+                <div class="trainer-detailed-card" data-category="nutrition">
+                    <div class="trainer-photo bg-nutrition">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Emma Williams</h3>
+                        <p class="trainer-specialty">Nutrition & Wellness</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">RD, LDN</span>
+                            <span class="badge">12 Years</span>
+                        </div>
+                        <p>Registered dietitian specializing in sports nutrition and weight management. Emma creates sustainable meal plans for lasting results.</p>
+                        <div class="trainer-stats">
+                            <div><strong>600+</strong> Clients</div>
+                            <div><strong>10K+</strong> Lbs Lost</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+
+                <div class="trainer-detailed-card" data-category="strength">
+                    <div class="trainer-photo bg-power">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Jessica Park</h3>
+                        <p class="trainer-specialty">Bodybuilding</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">IFBB Pro</span>
+                            <span class="badge">6 Years</span>
+                        </div>
+                        <p>Competitive bodybuilder and physique coach. Jessica helps clients build muscle, lose fat, and step on stage with confidence.</p>
+                        <div class="trainer-stats">
+                            <div><strong>200+</strong> Clients</div>
+                            <div><strong>15</strong> Competition Wins</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+
+                <div class="trainer-detailed-card" data-category="cardio">
+                    <div class="trainer-photo bg-boxing">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Thompson</h3>
+                        <p class="trainer-specialty">Boxing & MMA</p>
+                        <div class="trainer-credentials">
+                            <span class="badge">Former Pro</span>
+                            <span class="badge">15 Years</span>
+                        </div>
+                        <p>Former professional boxer with 50+ fights. Mike teaches boxing fundamentals, self-defense, and conditioning for all levels.</p>
+                        <div class="trainer-stats">
+                            <div><strong>350+</strong> Clients</div>
+                            <div><strong>50+</strong> Fights</div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Trainer -->
+    <section class="career-cta">
+        <div class="container">
+            <div class="career-box">
+                <h2>Join Our Team</h2>
+                <p>We're always looking for passionate fitness professionals to join IronPulse.</p>
+                <a href="contact.html" class="btn btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>IronPulse</span>
+                    </a>
+                    <p>Transform your body, ignite your spirit.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ironpulse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IronPulse Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

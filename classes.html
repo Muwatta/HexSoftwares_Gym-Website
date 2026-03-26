@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - IronPulse Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>IronPulse</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="classes.html" class="active">Classes</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="membership.html" class="btn btn-primary nav-cta">Join Now</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Group Fitness Classes</h1>
+            <p>100+ classes weekly for every fitness level</p>
+        </div>
+    </section>
+
+    <!-- Class Schedule Filter -->
+    <section class="class-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Classes</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="mind">Mind & Body</button>
+                <button class="filter-btn" data-filter="dance">Dance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Grid -->
+    <section class="classes-grid-section">
+        <div class="container">
+            <div class="classes-grid">
+                <div class="class-detail-card" data-category="strength">
+                    <div class="class-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>HIIT Blast</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 45 min | <i class="fas fa-fire"></i> High Intensity</p>
+                    <p>High-intensity interval training that alternates between intense bursts of activity and fixed periods of less-intense activity.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Mon 6:00 AM</span>
+                        <span class="schedule-tag">Wed 6:00 PM</span>
+                        <span class="schedule-tag">Fri 12:00 PM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="strength">
+                    <div class="class-icon bg-power">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>Power Lift</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 60 min | <i class="fas fa-dumbbell"></i> Strength</p>
+                    <p>Focus on major compound movements: squat, deadlift, bench press, and overhead press. Build real strength.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Tue 7:00 AM</span>
+                        <span class="schedule-tag">Thu 7:00 PM</span>
+                        <span class="schedule-tag">Sat 10:00 AM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="cardio">
+                    <div class="class-icon bg-spin">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <h3>Spin Revolution</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 45 min | <i class="fas fa-heartbeat"></i> Cardio</p>
+                    <p>Indoor cycling experience with high-energy music, motivating instructors, and calorie-torching workouts.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Daily 6:00 AM</span>
+                        <span class="schedule-tag">Daily 6:00 PM</span>
+                        <span class="schedule-tag">Weekends 9:00 AM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="mind">
+                    <div class="class-icon bg-yoga">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Power Yoga</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 60 min | <i class="fas fa-spa"></i> Mind & Body</p>
+                    <p>Dynamic, fitness-based approach to vinyasa-style yoga. Build strength, flexibility, and mental clarity.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Mon 7:00 PM</span>
+                        <span class="schedule-tag">Wed 7:00 AM</span>
+                        <span class="schedule-tag">Sun 10:00 AM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="mind">
+                    <div class="class-icon bg-pilates">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Reformer Pilates</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 50 min | <i class="fas fa-spa"></i> Mind & Body</p>
+                    <p>Low-impact, full-body workout on the reformer machine. Perfect for core strength and posture.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Tue 12:00 PM</span>
+                        <span class="schedule-tag">Thu 6:00 AM</span>
+                        <span class="schedule-tag">Sat 11:00 AM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="dance">
+                    <div class="class-icon bg-dance">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Zumba Party</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 60 min | <i class="fas fa-music"></i> Dance</p>
+                    <p>Dance fitness party featuring Latin and international music. Fun, effective, and feels like a party!</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Mon 6:00 PM</span>
+                        <span class="schedule-tag">Wed 6:00 PM</span>
+                        <span class="schedule-tag">Fri 6:00 PM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="cardio">
+                    <div class="class-icon bg-box">
+                        <i class="fas fa-boxing-glove"></i>
+                    </div>
+                    <h3>Box & Burn</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 45 min | <i class="fas fa-fire"></i> Cardio</p>
+                    <p>Boxing-inspired cardio workout that packs a punch. No contact, all fun, serious calorie burn.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Tue 6:00 PM</span>
+                        <span class="schedule-tag">Thu 6:00 AM</span>
+                        <span class="schedule-tag">Sat 9:00 AM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+
+                <div class="class-detail-card" data-category="strength">
+                    <div class="class-icon bg-core">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Core Crusher</h3>
+                    <p class="class-meta"><i class="fas fa-clock"></i> 30 min | <i class="fas fa-dumbbell"></i> Strength</p>
+                    <p>Quick, intense core workout targeting abs, obliques, and lower back. Perfect for busy schedules.</p>
+                    <div class="class-schedule">
+                        <span class="schedule-tag">Daily 12:00 PM</span>
+                        <span class="schedule-tag">Mon/Wed/Fri 5:30 PM</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Book Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Training CTA -->
+    <section class="pt-cta">
+        <div class="container">
+            <div class="pt-box">
+                <div class="pt-content">
+                    <h2>Prefer One-on-One?</h2>
+                    <p>Get personalized attention with our expert personal trainers. Custom programs designed for your specific goals.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Custom workout plans</li>
+                        <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                        <li><i class="fas fa-check"></i> Progress tracking</li>
+                        <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                    </ul>
+                    <a href="trainers.html" class="btn btn-primary">Meet Our Trainers</a>
+                </div>
+                <div class="pt-image">
+                    <i class="fas fa-user-ninja"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>IronPulse</span>
+                    </a>
+                    <p>Transform your body, ignite your spirit.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ironpulse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IronPulse Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
